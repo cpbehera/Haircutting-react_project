@@ -1,0 +1,14 @@
+.form-control{
+    border-color: #15171879;
+    border-radius: 0;
+}
+.form-control:focus,.form-check-input:focus{
+    box-shadow: none;
+    border-color: #305057;
+}
+.btn{
+    border-radius: 0px;
+    background: #3cb1a5;
+    border-color: #3cb1a5;
+    color: #fff;
+}

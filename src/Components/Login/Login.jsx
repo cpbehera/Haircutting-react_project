@@ -1,24 +1,29 @@
-import React from 'react'
+import React from 'react';
+import './Login.css';
 
 function Login() {
     return (
-        <div className='px-3'>
+        <div className='p-3' style={{backgroundColor: "#CFF4FC"}}>
         <h2 className='text-left py-3'>Login</h2>
             <form className='px-4 mt-4'>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Username or Email address <span style={{color:"red",fontWeight:"500"}}>*</span></label>
-                    <input type="email" class="form-control" id="InputEmail" />
-                    
+                <div className="mb-3">
+                    <label for="email" className="form-label">Username or Email address <span style={{color:"red",fontWeight:"500"}}>*</span></label>
+                    <input type="email" className="form-control" id="InputEmail" />
                 </div>
-                <div class="mb-3">
-                    <label for="Password" class="form-label">Password <span style={{color:"red",fontWeight:"500"}}>*</span></label>
-                    <input type="password" class="form-control" id="InputPassword" />
+                <div className="mb-3">
+                    <label for="Password" className="form-label">Password <span style={{color:"red",fontWeight:"500"}}>*</span></label>
+                    <input type="password" className="form-control" id="InputPassword" />
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="Check" />
-                    <label class="form-check-label" for="Checkbox">Remember me</label>
+                <div className="mb-3 form-check">
+                    <input type="checkbox" className="form-check-input" id="Check" />
+                    <label className="form-check-label" for="Checkbox">Remember me</label>
+                    <a href="#" className='text-primary' style={{marginLeft:'100px'}}>Forgot Password</a>
                 </div>
-                <button type="submit" class="btn btn-success px-4" style={{borderRadius:"0"}}>Login</button>
+                <button type="submit" className="btn px-4">Login</button>
+
+                <div className='my-3 text-center'>
+                    <a href="#">Do not have a account ? <span className='text-primary'>Sign Up</span></a>
+                </div>
             </form>
         </div>
     )

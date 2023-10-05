@@ -5,7 +5,7 @@ import './Nav.css';
 function Nav() {
   return (
     <div>
-     <nav className="navbar navbar-expand-lg bg-body-tertiary px-2">
+     <nav className="navbar navbar-expand-lg text-bg-light px-2">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
       <img src={logo} alt="haircutting" />
